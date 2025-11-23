@@ -1,0 +1,556 @@
+/* TTSGenerator 组件样式 */
+
+.tts-generator {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
+}
+
+/* 头部卡片 */
+.header-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--ctp-mantle);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--ctp-surface0);
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--ctp-text);
+}
+
+.header-content h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #606266;
+  font-weight: normal;
+}
+
+.badge {
+  margin-top: 10px;
+}
+
+.badge a {
+  text-decoration: none;
+}
+
+/* 主标签页 */
+.main-tabs {
+  margin-top: 20px;
+}
+
+.main-tabs :deep(.el-tabs__content) {
+  padding-top: 20px;
+}
+
+/* 确保所有卡片样式统一 */
+.el-card {
+  background-color: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface0) !important;
+  border-radius: 8px;
+}
+
+.el-card__header {
+  border-bottom-color: var(--ctp-surface0) !important;
+  padding: 16px 20px;
+  color: var(--ctp-text) !important;
+}
+
+.el-card__body {
+  padding: 20px;
+  color: var(--ctp-text) !important;
+}
+
+/* 音频播放器 */
+.audio-player {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.audio-player audio {
+  width: 100%;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* 音频全宽 */
+.audio-full-width {
+  width: 100%;
+}
+
+/* 当前音色 */
+.current-voice {
+  margin-top: 15px;
+}
+
+/* 输出音频 */
+.output-audio {
+  margin-top: 20px;
+}
+
+/* 流程布局 */
+.voice-reference-section {
+  margin-bottom: 15px;
+}
+
+.text-input-section {
+  margin-bottom: 15px;
+}
+
+.output-audio-section {
+  margin-top: 15px;
+  min-height: 120px;
+}
+
+.no-output-hint {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--ctp-subtext0);
+  font-size: 13px;
+  background-color: var(--ctp-surface0);
+  border-radius: 4px;
+  border: 1px dashed var(--ctp-surface1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ctp-text);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-voice-hint {
+  padding: 20px;
+  text-align: center;
+  color: var(--ctp-subtext0);
+  font-size: 13px;
+  background-color: var(--ctp-surface0);
+  border-radius: 4px;
+  border: 1px dashed var(--ctp-surface1);
+}
+
+.flow-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  color: var(--ctp-text);
+}
+
+/* 按钮样式 */
+.btn-full-width {
+  width: 100%;
+}
+
+.btn-save-voice {
+  width: 100%;
+}
+
+.btn-refresh {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-generate {
+  width: 100%;
+  margin-top: 15px;
+  height: 50px;
+}
+
+.btn-float-right {
+  float: right;
+}
+
+/* 下拉选择框 */
+.select-full-width {
+  width: 100%;
+}
+
+/* 标签 */
+.tag-margin-left {
+  margin-left: 10px;
+}
+
+/* 情感控制区域 */
+.emo-section {
+  margin-top: 15px;
+}
+
+.emo-vector-item {
+  margin-bottom: 10px;
+}
+
+.emo-random-checkbox {
+  margin-top: 10px;
+}
+
+.emo-weight-hint {
+  font-size: 12px;
+  color: var(--ctp-subtext0);
+  margin-top: 5px;
+}
+
+/* 高级设置 */
+.advanced-settings-card {
+  margin-top: 20px;
+}
+
+.advanced-settings-card :deep(.el-card__header) {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.advanced-settings-card :deep(.el-card__body) {
+  padding-top: 12px !important;
+}
+
+/* 确保高级设置折叠面板样式统一 */
+.advanced-settings-card :deep(.el-collapse) {
+  border: none;
+  background-color: transparent;
+}
+
+.advanced-settings-card :deep(.el-collapse-item) {
+  border: none;
+}
+
+.advanced-settings-card :deep(.el-collapse-item__header) {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.advanced-param-item {
+  margin-top: 10px;
+}
+
+.advanced-number-input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 参数项带标签 */
+.param-item-with-label {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.param-item-with-label:first-child {
+  margin-top: 0;
+}
+
+.param-label {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--ctp-text);
+  margin-right: 8px;
+  min-width: 140px;
+}
+
+.param-desc {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--ctp-subtext0);
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.param-item-with-label .el-checkbox {
+  margin-top: 0;
+}
+
+.param-item-with-label .advanced-param-item,
+.param-item-with-label .advanced-number-input {
+  margin-top: 8px;
+}
+
+/* 分句设置 */
+.segment-config {
+  margin-bottom: 10px;
+}
+
+.segment-hint {
+  font-size: 12px;
+  color: var(--ctp-subtext0);
+  margin-top: 5px;
+}
+
+.segment-table {
+  margin-top: 10px;
+}
+
+/* 分句表格深色主题样式 */
+.segment-table {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table) {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+.segment-table :deep(.el-table__inner-wrapper) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__header-wrapper) {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.segment-table :deep(.el-table__header) {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.segment-table :deep(.el-table__header th) {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-bottom-color: var(--ctp-surface1) !important;
+  border-right-color: var(--ctp-surface1) !important;
+}
+
+.segment-table :deep(.el-table__header th:last-child) {
+  border-right: none !important;
+}
+
+.segment-table :deep(.el-table__body-wrapper) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__body) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__body tr) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__body td) {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+  border-bottom-color: var(--ctp-surface1) !important;
+  border-right-color: var(--ctp-surface1) !important;
+}
+
+.segment-table :deep(.el-table__body td:last-child) {
+  border-right: none !important;
+}
+
+.segment-table :deep(.el-table__row) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__row:hover) {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.segment-table :deep(.el-table__row:hover td) {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.segment-table :deep(.el-table__empty-block) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__empty-text) {
+  color: var(--ctp-subtext0) !important;
+}
+
+.segment-table :deep(.el-table__fixed),
+.segment-table :deep(.el-table__fixed-right) {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.segment-table :deep(.el-table__fixed::before),
+.segment-table :deep(.el-table__fixed-right::before) {
+  background-color: var(--ctp-surface1) !important;
+}
+
+/* 示例卡片 */
+.examples-card {
+  margin-top: 20px;
+}
+
+/* 示例列表样式 */
+.examples-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  .examples-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.example-card {
+  background-color: var(--ctp-surface0);
+  border: 1px solid var(--ctp-surface1);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  transition: all 0.3s;
+}
+
+.example-card:hover {
+  background-color: var(--ctp-mantle);
+  border-color: var(--ctp-surface2);
+}
+
+.example-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.example-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.example-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ctp-subtext0);
+  margin-bottom: 4px;
+}
+
+.example-text-content {
+  color: var(--ctp-text);
+  font-size: 14px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.example-audios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example-audio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.example-audio {
+  width: 100%;
+  max-width: 300px;
+}
+
+.example-actions {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4px;
+}
+
+.examples-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--ctp-subtext0);
+  font-size: 14px;
+  background-color: var(--ctp-surface0);
+  border-radius: 8px;
+  border: 1px dashed var(--ctp-surface1);
+}
+
+/* 情感音频容器 */
+.emo-audio-container {
+  margin-top: 10px;
+}
+
+/* 拖拽上传区域 */
+.voice-upload-drag {
+  width: 100%;
+}
+
+.voice-upload-drag :deep(.el-upload) {
+  width: 100%;
+}
+
+.voice-upload-drag :deep(.el-upload-dragger) {
+  width: 100%;
+  height: 180px;
+  background-color: var(--ctp-surface0);
+  border: 2px dashed var(--ctp-surface1);
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.voice-upload-drag :deep(.el-upload-dragger:hover) {
+  border-color: var(--ctp-blue);
+  background-color: var(--ctp-mantle);
+}
+
+.voice-upload-drag :deep(.el-icon--upload) {
+  font-size: 67px;
+  color: var(--ctp-subtext0);
+  margin: 40px 0 16px;
+  line-height: 50px;
+}
+
+.voice-upload-drag :deep(.el-upload__text) {
+  color: var(--ctp-text);
+  font-size: 14px;
+  text-align: center;
+}
+
+.voice-upload-drag :deep(.el-upload__text em) {
+  color: var(--ctp-blue);
+  font-style: normal;
+}
+
+.voice-upload-drag :deep(.el-upload__tip) {
+  font-size: 12px;
+  color: var(--ctp-subtext0);
+  margin-top: 7px;
+  text-align: center;
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+  .tts-generator {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tts-generator {
+    padding: 10px;
+  }
+  
+  .header-content h2 {
+    font-size: 20px;
+  }
+  
+  .header-content h3 {
+    font-size: 14px;
+  }
+}
+

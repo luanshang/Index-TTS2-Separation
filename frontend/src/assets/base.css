@@ -1,0 +1,131 @@
+/* Catppuccin Mocha Color Palette */
+:root {
+  /* Catppuccin Mocha Colors */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  
+  /* Text Colors */
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  
+  /* Overlay Colors */
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  
+  /* Surface Colors */
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  
+  /* Base Colors */
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+  
+  /* Semantic color variables for this project */
+  --color-background: var(--ctp-base);
+  --color-background-soft: var(--ctp-mantle);
+  --color-background-mute: var(--ctp-crust);
+  
+  --color-border: var(--ctp-surface0);
+  --color-border-hover: var(--ctp-surface1);
+  
+  --color-heading: var(--ctp-text);
+  --color-text: var(--ctp-subtext1);
+  
+  --section-gap: 160px;
+  
+  /* Element Plus Theme Colors - Catppuccin Mocha */
+  --el-color-primary: var(--ctp-blue);
+  --el-color-primary-light-3: var(--ctp-sapphire);
+  --el-color-primary-light-5: var(--ctp-sky);
+  --el-color-primary-light-7: var(--ctp-teal);
+  --el-color-primary-light-8: var(--ctp-green);
+  --el-color-primary-light-9: var(--ctp-surface1);
+  --el-color-primary-dark-2: var(--ctp-lavender);
+  
+  --el-color-success: var(--ctp-green);
+  --el-color-warning: var(--ctp-yellow);
+  --el-color-danger: var(--ctp-red);
+  --el-color-error: var(--ctp-red);
+  --el-color-info: var(--ctp-subtext0);
+  
+  --el-bg-color: var(--ctp-mantle);
+  --el-bg-color-page: var(--ctp-base);
+  --el-bg-color-overlay: var(--ctp-mantle);
+  
+  --el-text-color-primary: var(--ctp-text);
+  --el-text-color-regular: var(--ctp-subtext1);
+  --el-text-color-secondary: var(--ctp-subtext0);
+  --el-text-color-placeholder: var(--ctp-overlay0);
+  --el-text-color-disabled: var(--ctp-surface2);
+  
+  --el-border-color: var(--ctp-surface0);
+  --el-border-color-light: var(--ctp-surface1);
+  --el-border-color-lighter: var(--ctp-surface2);
+  --el-border-color-extra-light: var(--ctp-overlay0);
+  --el-border-color-dark: var(--ctp-surface0);
+  --el-border-color-darker: var(--ctp-surface0);
+  
+  --el-fill-color: var(--ctp-surface0);
+  --el-fill-color-light: var(--ctp-surface1);
+  --el-fill-color-lighter: var(--ctp-surface2);
+  --el-fill-color-extra-light: var(--ctp-overlay0);
+  --el-fill-color-dark: var(--ctp-surface0);
+  --el-fill-color-darker: var(--ctp-surface0);
+  --el-fill-color-blank: transparent;
+  
+  --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.3), 0px 8px 20px rgba(0, 0, 0, 0.2);
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.4), 0px 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,71 @@
+# Development Tools.
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+.idea/
+.vscode/
+
+# Environments.
+.venv*/
+venv*/
+conda_env*/
+
+# Python Bytecode.
+*.py[cod]
+
+# Distribution/Packaging.
+/build/
+/dist/
+*.egg-info/
+.pypirc
+
+# Operating System Junk.
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# IndexTTS - Model files and outputs
+index-tts/cache/
+index-tts/checkpoints/*
+!index-tts/checkpoints/*.yaml
+index-tts/outputs/
+index-tts/voices/
+*.pt
+*.pth
+
+# Audio files (large files, exclude from repo)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# Node modules
+node_modules/
+**/node_modules/
+frontend/node_modules/
+frontend/**/node_modules/
+
+# Frontend build outputs
+frontend/dist/
+frontend/.vite/
+frontend/build/
+**/dist/
+**/.vite/
+**/build/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

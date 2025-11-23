@@ -1,0 +1,274 @@
+@import './base.css';
+
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--ctp-base);
+}
+
+/* Element Plus 组件主题覆盖 */
+.el-card {
+  background-color: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+.el-card__header {
+  border-bottom-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+.el-tabs__item {
+  color: var(--ctp-subtext0) !important;
+}
+
+.el-tabs__item.is-active {
+  color: var(--ctp-blue) !important;
+}
+
+.el-input__wrapper {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+.el-textarea__inner {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+.el-select__wrapper {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.el-upload-dragger {
+  background-color: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface0) !important;
+}
+
+.el-table {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+.el-table th {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+.el-table td {
+  border-color: var(--ctp-surface1) !important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: var(--ctp-surface0) !important;
+}
+
+/* 分割线样式 */
+.el-divider {
+  border-color: var(--ctp-surface0) !important;
+  background-color: var(--ctp-surface0) !important;
+}
+
+.el-divider--horizontal {
+  margin: 16px 0;
+  border-top-color: var(--ctp-surface0) !important;
+}
+
+/* 折叠面板样式 */
+.el-collapse {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.el-collapse-item {
+  border: none !important;
+  margin-bottom: 10px;
+}
+
+.el-collapse-item__header {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: 1px solid var(--ctp-surface1) !important;
+}
+
+.el-collapse-item__header:hover {
+  background-color: var(--ctp-surface1) !important;
+}
+
+.el-collapse-item__header.is-active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none !important;
+}
+
+.el-collapse-item__wrap {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  border-top: none !important;
+  border-radius: 0 0 4px 4px;
+}
+
+.el-collapse-item__content {
+  padding: 16px !important;
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-bottom-color: var(--ctp-surface1) !important;
+}
+
+.el-collapse-item__arrow {
+  color: var(--ctp-subtext0) !important;
+}
+
+/* 滑块样式 */
+.el-slider {
+  margin: 12px 0;
+}
+
+.el-slider__runway {
+  background-color: var(--ctp-surface1) !important;
+}
+
+.el-slider__bar {
+  background-color: var(--ctp-blue) !important;
+}
+
+.el-slider__button {
+  border-color: var(--ctp-blue) !important;
+  background-color: var(--ctp-blue) !important;
+}
+
+.el-slider__button:hover {
+  border-color: var(--ctp-sapphire) !important;
+}
+
+/* 单选框和复选框 */
+.el-radio__label,
+.el-checkbox__label {
+  color: var(--ctp-text) !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: var(--ctp-blue) !important;
+  border-color: var(--ctp-blue) !important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: var(--ctp-blue) !important;
+  border-color: var(--ctp-blue) !important;
+}
+
+/* 输入框和数字输入框 */
+.el-input-number {
+  width: 100%;
+}
+
+.el-input-number .el-input__wrapper {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+.el-input-number .el-input__inner {
+  color: var(--ctp-text) !important;
+}
+
+/* 数字输入框的加减按钮 */
+.el-input-number__decrease,
+.el-input-number__increase {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface2) !important;
+}
+
+.el-input-number__decrease:hover,
+.el-input-number__increase:hover {
+  background-color: var(--ctp-surface2) !important;
+  color: var(--ctp-blue) !important;
+}
+
+.el-input-number__decrease:active,
+.el-input-number__increase:active {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.el-input-number__decrease.is-disabled,
+.el-input-number__increase.is-disabled {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-overlay0) !important;
+  cursor: not-allowed;
+}
+
+.el-input-number__decrease.is-disabled:hover,
+.el-input-number__increase.is-disabled:hover {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-overlay0) !important;
+}
+
+/* 数字输入框按钮的图标 */
+.el-input-number__decrease .el-icon,
+.el-input-number__increase .el-icon {
+  color: var(--ctp-text) !important;
+}
+
+.el-input-number__decrease:hover .el-icon,
+.el-input-number__increase:hover .el-icon {
+  color: var(--ctp-blue) !important;
+}
+
+/* 上传组件 */
+.el-upload-dragger {
+  background-color: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+.el-upload-dragger:hover {
+  border-color: var(--ctp-blue) !important;
+  background-color: var(--ctp-surface0) !important;
+}
+
+.el-upload__text {
+  color: var(--ctp-subtext0) !important;
+}
+
+.el-upload__text em {
+  color: var(--ctp-blue) !important;
+}
+
+/* 标签页样式 */
+.el-tabs__header {
+  margin: 0 0 20px 0;
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.el-tabs__active-bar {
+  background-color: var(--ctp-blue) !important;
+}
+
+/* 按钮文本样式 */
+.el-button--text {
+  color: var(--ctp-blue) !important;
+}
+
+.el-button--text:hover {
+  color: var(--ctp-sapphire) !important;
+}
